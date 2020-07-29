@@ -28,6 +28,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/admin/picturesmanage">圖片管理</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">回到前台</router-link>
+          </li>
         </ul>
         <a href="#" @click.prevent="logout()">登出</a>
       </div>
@@ -74,6 +77,7 @@ export default {
     checkLogin() {
       const vm = this;
       vm.token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
+      vm.isLoading = true;
       vm.$http({
         method: 'post',
         url: `${process.env.VUE_APP_APIPATH}/auth/check`,
@@ -83,9 +87,11 @@ export default {
         },
       }).then(() => {
         vm.checkSuccess = true;
+        vm.isLoading = false;
       }).catch((err) => {
       // eslint-disable-next-line no-console
         console.log('錯誤，請重新登入', err.response);
+        vm.isLoading = false;
         // 導入首頁
         vm.$router.push('/login');
       });

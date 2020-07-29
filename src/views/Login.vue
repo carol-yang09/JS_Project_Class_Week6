@@ -54,11 +54,9 @@ export default {
         vm.$http.post(api, vm.auth).then((res) => {
           const { token } = res.data;
           const { expired } = res.data;
-          // eslint-disable-next-line no-console
-          console.log(res);
           document.cookie = `hexToken=${token};expires=${new Date(expired * 1000)}; path=/`;
           vm.isLoading = false;
-          this.$router.push('/admin/productsmanage');
+          this.$router.push('/admin');
         }).catch((err) => {
           vm.isLoading = false;
           // eslint-disable-next-line no-console
@@ -78,7 +76,7 @@ export default {
         },
       }).then(() => {
         vm.isLoading = false;
-        vm.$router.push('/admin/productsmanage');
+        vm.$router.push('/admin');
       }).catch((err) => {
         vm.isLoading = false;
         // eslint-disable-next-line no-console
