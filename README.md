@@ -1,24 +1,5 @@
-# js_project_class_week6
+# JS 作品實戰班 - 第六週 建立路由 - 主線作業
 
-## Project setup
-```
-npm install
-```
+## DEMO
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://carol-yang09.github.io/JS_Project_Class_Week6/dist

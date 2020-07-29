@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2384cd"],{ff90:function(e,t,n){"use strict";n.r(t);var c=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",[n("h2",{staticClass:"my-5 h3 text-center"},[e._v("後台 - 產品列表管理")])])}],s={name:"ProductsManage",props:["token"]},a=s,u=n("2877"),l=Object(u["a"])(a,c,r,!1,null,null,null);t["default"]=l.exports}}]);
+//# sourceMappingURL=chunk-2d2384cd.bdf97dc8.js.map

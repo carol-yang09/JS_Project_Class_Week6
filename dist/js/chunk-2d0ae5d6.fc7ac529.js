@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ae5d6"],{"0a6e":function(e,t,n){"use strict";n.r(t);var a=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",[n("h2",{staticClass:"my-5 h3 text-center"},[e._v("後台 - 後台首頁")])])}],s={name:"Dashboard",props:["token"]},c=s,l=n("2877"),u=Object(l["a"])(c,a,r,!1,null,null,null);t["default"]=u.exports}}]);
+//# sourceMappingURL=chunk-2d0ae5d6.fc7ac529.js.map
